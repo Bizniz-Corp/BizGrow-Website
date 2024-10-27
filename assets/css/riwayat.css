@@ -30,3 +30,16 @@ button.btn img {
     width: 20px;
     height: 20px;
 }
+
+#endDate::before {
+    content: attr(data-placeholder);
+    color: #6c757d;
+    /* Warna abu-abu placeholder */
+    position: absolute;
+    margin-left: 0.5em;
+}
+
+#endDate:focus::before,
+#endDate:not(:placeholder-shown)::before {
+    content: '';
+}
