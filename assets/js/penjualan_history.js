@@ -56,32 +56,6 @@
 //         return document.getElementById('endDate').value;
 //     }
 // });
-
-// $(document).ready(function() {
-//     $.getJSON('../penjualan.json', function(data) {
-//         populateTable(data);
-//     });
-
-//     function populateTable(data) {
-//         const tbody = $('tbody');
-//         tbody.empty(); // Hapus isi tabel yang ada
-//         $.each(data, function(index, item) {
-//             const row = `
-//                 <tr>
-//                     <td>${item.no}</td>
-//                     <td>${item.tanggal}</td>
-//                     <td>${item.id}</td>
-//                     <td>${item.produk}</td>
-//                     <td>${item.kuantitas}</td>
-//                     <td>${item.harga.toLocaleString()}</td>
-//                     <td>${item.total.toLocaleString()}</td>
-//                 </tr>
-//             `;
-//             tbody.append(row); // Tambahkan baris baru ke tabel
-//         });
-//     }
-// });
-
 $(document).ready(function() {
     const filterModal = new bootstrap.Modal($('#filterModal')[0]);
 
