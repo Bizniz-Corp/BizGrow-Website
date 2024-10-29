@@ -10,7 +10,7 @@
     --lightBlue: #4E69BA;
 }
 
-/* Sidebar */
+/* Reset Styles */
 ::after,
 ::before {
     box-sizing: border-box;
@@ -33,9 +33,9 @@ h1 {
 
 body {
     font-family: 'Montserrat', sans-serif;
-
 }
 
+/* Layout */
 .wrapper {
     display: flex;
     height: 100vh;
@@ -53,6 +53,7 @@ body {
     height: 100vh;
 }
 
+/* Sidebar */
 #sidebar {
     width: 4.375rem;
     height: 100%;
@@ -62,6 +63,9 @@ body {
     background-color: var(--primary);
     display: flex;
     flex-direction: column;
+    overflow-y: auto;
+    scrollbar-width: thin;
+    scrollbar-color: var(--secondary) var(--primary);
 }
 
 #sidebar.expand {
@@ -69,6 +73,21 @@ body {
     min-width: 16.25rem;
 }
 
+/* Custom Scrollbar */
+#sidebar::-webkit-scrollbar {
+    width: 8px;
+}
+
+#sidebar::-webkit-scrollbar-track {
+    background: var(--primary);
+}
+
+#sidebar::-webkit-scrollbar-thumb {
+    background-color: var(--secondary);
+    border-radius: 10px;
+}
+
+/* Sidebar Toggle */
 .toggle-btn {
     background-color: transparent;
     cursor: pointer;
@@ -86,6 +105,7 @@ body {
     object-fit: cover;
 }
 
+/* Sidebar Links */
 .sidebar-nama {
     margin: auto 0;
 }
@@ -113,11 +133,13 @@ a.sidebar-link {
     font-size: 0.9rem;
     white-space: nowrap;
     border-left: 3px solid transparent;
+    transition: background-color 0.3s ease;
 }
 
 .sidebar-link img {
     font-size: 1.1rem;
-    margin-right: .75rem
+    margin-right: .75rem;
+    vertical-align: middle;
 }
 
 a.sidebar-link:hover {
@@ -129,6 +151,7 @@ a.sidebar-link:hover {
     position: relative;
 }
 
+/* Sidebar Dropdown */
 #sidebar:not(.expand) .sidebar-item .sidebar-dropdown {
     position: absolute;
     top: 0;
@@ -137,12 +160,14 @@ a.sidebar-link:hover {
     padding: 0;
     min-width: 15rem;
     display: none;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
 }
 
-#sidebar:not(.expand) .sidebar-item:hover .has-dropdown+.sidebar-dropdown {
+#sidebar:not(.expand) .sidebar-item:hover .has-dropdown + .sidebar-dropdown {
     display: block;
     max-height: 15em;
-    width: 100%;
     opacity: 1;
 }
 
@@ -174,7 +199,6 @@ a.sidebar-link:hover {
     color: var(--white);
 }
 
-
 /* Header */
 header {
     height: auto;
@@ -195,6 +219,7 @@ header h1 {
 .btn-primary {
     background-color: var(--secondary);
     border: none;
+    transition: background-color 0.3s ease;
 }
 
 .btn-primary:hover {
@@ -221,6 +246,7 @@ header h1 {
     text-decoration: none;
     border: none;
     margin-right: 20px; /* Spacing between the buttons */
+    transition: background-color 0.3s ease;
 }
 
 /* Remove margin for the last button */
@@ -237,18 +263,21 @@ header h1 {
 .btn-custom:hover {
     background-color: var(--lightBlue);
 }
-
 /* Media Queries */
-/* @media (max-width: 768px) {
+/*@media (max-width: 768px) {
     #sidebar {
-        width: 200px;
+        width: 3rem; /* Smaller sidebar for mobile
+    }
+
+    #sidebar.expand {
+        width: 12rem; /* Smaller expanded width for mobile 
     }
 
     .content {
-        margin-left: 200px;
+        margin-left: 3rem; /* Align content with reduced sidebar width 
     }
 
     header h1 {
         font-size: 24px;
     }
-} */
+}*/
