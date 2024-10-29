@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    text-align: center;
+    color: #333;
+}
+.container {
+    max-width: 500px;
+    margin: auto;
+    padding-top: 50px;
+    text-align: center;
+}
+.header {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.profit-box {
+    background-color: #1a1a40;
+    color: #fff;
+    font-size: 24px;
+    padding: 15px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+.features-heading {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
+}
+.features {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* Three columns with fixed width */
+    gap: 20px;
+    justify-content: center; /* Center the grid items horizontally */
+}
+.feature {
+    width: 100px;
+    height: 100px;
+    background-color: #1a1a40;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    font-size: 14px;
+}
