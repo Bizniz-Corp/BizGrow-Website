@@ -1,0 +1,45 @@
+/* Bagian Filtering */
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    /* Menjaga agar item tetap sejajar */
+}
+
+#selectedDates {
+    font-weight: bold;
+    /* Mengubah font menjadi tebal */
+}
+
+/* Table */
+.table-container {
+    height: 30rem;
+}
+
+.table thead tr th {
+    background-color: var(--primary) !important;
+    color: var(--white);
+}
+
+.table tbody tr td {
+    background-color: var(--white);
+    color: var(--primary);
+}
+
+button.btn img {
+    width: 20px;
+    height: 20px;
+}
+
+#endDate::before {
+    content: attr(data-placeholder);
+    color: #6c757d;
+    /* Warna abu-abu placeholder */
+    position: absolute;
+    margin-left: 0.5em;
+}
+
+#endDate:focus::before,
+#endDate:not(:placeholder-shown)::before {
+    content: '';
+}
