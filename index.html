@@ -1,97 +1,36 @@
-  <!DOCTYPE html>
-  <html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login - Pizgrow</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BizGrow - Welcome</title>
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="../assets/css/style.css" rel="stylesheet">
   <style>
-    body {
-  background-color: #1a1a3e;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  margin: 0;
-}
-
-.login-container {
-  background-color: #fff;
-  padding: 0;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-  display: flex;
-  width: 800px;
-}
-
-.form-container {
-  padding: 40px;
-  width: 50%;
-}
-
-.form-container h2 {
-  margin-bottom: 20px;
-
-}
-
-.form-control {
-  margin-bottom: 20px;
-}
-
-.image-container {
-  background-image: url('img/Sign in.png');
-  background-color: #1a1a3e;
-  /* Replace with your actual image */
-  background-size: cover;
-  background-position: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-  width: 50%;
-}
-
-.overlay-logo img {
-  width: 150px;
-  /* Adjust size as needed */
-  height: auto;
-}
+      body {
+          background-color: #F5F5FA;
+          color: #151436;
+      }
   </style>
+</head>
 
-  <body>
-    <div class="login-container">
-      <div class="form-container">
-        <h2>Sign In</h2>
-        <form>
-          <div class="mb-3">
-            <label for="email" class="form-label">Email</label>
-            <br>
-            <input type="email" class="form-control" id="email" placeholder="Isi Email">
-          </div>
-          <div class="mb-3">
-            <label for="password" class="form-label">Password</label>
-            <br>
-            <input type="password" class="form-control" id="password" placeholder="Isi Password">
-          </div>
-          <button type="button" onclick="location.href='indexhome.html'" class="btn btn-primary w-100">Sign In</button>
-          <p class="mt-3">Belum Punya Akun? <a href="indexsignup.html">Klik Di Sini</a></p>
-        </form>
-      </div>
-      <div class="image-container">
-        <div class="overlay-logo">
-          <img src="img/logo1.png" alt="Pizgrow Logo"> <!-- Replace with your logo -->
-        </div>
-      </div>
-    </div>
+<body>
+  <div class="container d-flex flex-column align-items-center justify-content-center vh-100">
+      <img src="img/logo.png" alt="BizGrow Logo" class="mb-4">
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>     
-  </body>
+      <h1 class="h1 fw-bold">Welcome to BizGrow</h1>
+      <p class="mb-4">Your platform to grow your business effectively.</p>
 
-  </html>
+      <a href="signin.html" class="btn btn-primary">Get Started</a>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="../assets/js/script.js"></script>
+</body>
+</html>
