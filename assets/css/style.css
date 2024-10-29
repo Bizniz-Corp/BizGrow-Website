@@ -33,7 +33,6 @@ h1 {
 
 body {
     font-family: 'Montserrat', sans-serif;
-
 }
 
 .wrapper {
@@ -199,10 +198,6 @@ header h1 {
 
 .btn-primary:hover {
     background-color: var(--lightBlue);
-}
-
-.form-container{
-    width: 800px;
 }
 
 /* Media Queries */
