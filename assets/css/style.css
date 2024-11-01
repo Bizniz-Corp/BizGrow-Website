@@ -63,28 +63,11 @@ body {
     background-color: var(--primary);
     display: flex;
     flex-direction: column;
-    overflow-y: auto;
-    scrollbar-width: thin;
-    scrollbar-color: var(--secondary) var(--primary);
 }
 
 #sidebar.expand {
     width: 16.25rem;
     min-width: 16.25rem;
-}
-
-/* Custom Scrollbar */
-#sidebar::-webkit-scrollbar {
-    width: 8px;
-}
-
-#sidebar::-webkit-scrollbar-track {
-    background: var(--primary);
-}
-
-#sidebar::-webkit-scrollbar-thumb {
-    background-color: var(--secondary);
-    border-radius: 10px;
 }
 
 /* Sidebar Toggle */
@@ -291,17 +274,6 @@ header h1 {
   padding: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   cursor: pointer;
-}
-
-/*Input Field */
-.form-control {
-    background-color: var(--white);
-    color: var(--primary);
-    border-color: var(--primary);
-    width: 600px;
-    padding: 0.5rem 1rem;
-    border-width: 2px;
-    border-radius: 16px;
 }
 
 /* Media Queries */
