@@ -10,7 +10,6 @@ document.addEventListener('DOMContentLoaded', function() {
         alert('Please fill in both email and password.');
       } else {
         alert('Form submitted!');
-        // Add form submission logic here
       }
     });
   });

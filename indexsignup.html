@@ -7,78 +7,8 @@
   <title>Sign Up - BizGrow</title>
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body {
-      background-color: #1a1a3e;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
-      margin: 0;
-    }
-
-    .signup-container {
-      background-color: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
-      display: flex;
-      width: 900px;
-    } 
-
-    .form-container {
-      padding: 40px;
-      width: 50%;
-    }
-
-    .form-container h2 {
-      margin-bottom: 20px;
-      color: #1a1a3e;
-      text-align: center;
-    }
-
-    .form-control {
-      margin-bottom: 15px;
-    }
-
-    .image-container {
-      background-image: url('img/Sign in.png'); /* Replace with your actual image */
-      background-size: cover;
-      background-position: center;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: relative;
-      width: 50%;
-    }
-
-    .overlay-logo img {
-      width: 150px;
-      height: auto;
-      position: absolute;
-      top: 50%; /* Posisikan di tengah secara vertikal */
-      left: 50%; /* Posisikan di tengah secara horizontal */
-      transform: translate(-50%, -50%); /* Translasi untuk memastikan logo benar-benar di tengah */
-    }
-
-    .btn-upload {
-      display: flex;
-      align-items: center;
-    }
-
-    .btn-upload input[type="file"] {
-      margin-left: 10px;
-    }
-
-    .btn-primary {
-      background-color: #1a1a3e;
-      border: none;
-    }
-
-    .btn-primary:hover {
-      background-color: #1b8cff;
-    }
-  </style>
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/signup.css">
 </head>
 
 <body>
@@ -86,37 +16,43 @@
     <div class="form-container">
       <h2>Sign Up</h2>
       <form>
-        <div class="mb-3">
+        <div class = "mb-3">
           <label for="name" class="form-label">Nama</label>
-          <input type="text" class="form-control" id="name" placeholder="isi nama">
+          <br>
+          <input type="text" class="form-control" placeholder="Isi Nama">
         </div>
         <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" placeholder="isi Email">
+          <label for="Email" class="form-label">Email</label>
+          <br>
+          <input type="emmail" class="form-control" placeholder="Isi Email">
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Password</label>
-          <input type="password" class="form-control" id="password" placeholder="isi Password">
+          <br>
+          <input type="password" class="form-control" placeholder="Isi Password">
         </div>
         <div class="mb-3">
           <label for="npwp" class="form-label">Nomor Pokok Wajib Pajak</label>
-          <input type="text" class="form-control" id="npwp" placeholder="isi NPWP">
+          <br>
+          <input type="text" class="form-control" placeholder="Isi NPWP">
         </div>
         <div class="mb-3">
-          <label for="upload" class="form-label">Surat Izin Usaha Perusahaan</label>
+          <label for="Upload" class="form-label">Surat Izin Usaha</label>
           <div class="btn-upload">
             <button class="btn btn-secondary">Upload File</button>
-            <input type="file" id="upload" class="form-control">
+            <input type="file" class="form-control">
           </div>
         </div>
-        <button type="button" onclick="location.href='index.html'" class="btn btn-primary w-100">Sign Up</button>
+        <button type="button" onclick="location.href='indexsignin.html'" class="btn btn-primary w-100">Sign Up</button>
       </form>
     </div>
     <div class="image-container">
+      <img src="img/Sign in.png" alt="bizgrowlogo">
       <div class="overlay-logo">
-        <img src="img/logo1.png" alt="BizGrow Logo"> <!-- Replace with your logo -->
+        <img src="img/logo1.png" alt="Pizgrow Logo"> <!-- Replace with your logo -->
       </div>
     </div>
+  
   </div>
 
   <!-- Bootstrap JS -->
