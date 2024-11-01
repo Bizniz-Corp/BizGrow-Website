@@ -1,7 +1,7 @@
 .button-container {
     display: flex;
-    justify-content: center; /* Centering the buttons */
-    margin-top: 40px;
+    justify-content: center;
+    margin-top: 150px;
 }
 
 .btn-custom {
@@ -17,11 +17,10 @@
     border-radius: 10px;
     text-decoration: none;
     border: none;
-    margin-right: 20px; /* Spacing between the buttons */
+    margin-right: 20px;
     transition: background-color 0.3s ease;
 }
 
-/* Remove margin for the last button */
 .btn-custom:last-child {
     margin-right: 0;
 }
