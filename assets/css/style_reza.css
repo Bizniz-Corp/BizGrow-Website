@@ -43,11 +43,14 @@ body {
 
 .main {
     min-height: 100vh;
-    width: 100%;
+    margin-left: 4.375rem;
+    width: calc(100% - 4.375rem);
+    /* flex-grow: 1; */
     /* overflow: hidden; */
     transition: all 0.35s ease-in-out;
     background-color: var(--white);
 }
+
 
 .content {
     height: 100vh;
