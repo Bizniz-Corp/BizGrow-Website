@@ -1,4 +1,4 @@
-//Buat expand sidebar
+// Buat expand sidebar
 const hamBurger = document.querySelector('.toggle-btn');
 
 hamBurger.addEventListener('click', function () {
