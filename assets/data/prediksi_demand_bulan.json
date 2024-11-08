@@ -1,0 +1,94 @@
+[
+  {
+    "produk": "Ayam Bakar Nashvilled",
+    "labels": [
+      "JAN", "FEB", "MAR", "APR", "MEI", 
+      "JUN", "JUL", "AGU", "SEP", "OKT", 
+      "NOV", "DES"
+    ],
+    "datasets": [
+      {
+        "label": "Actual Demand",
+        "data": [1000, 1050, 1600, 1400, 1250, 1700, 1400, 1450, null, null, null, null],
+        "borderColor": "rgba(34, 55, 119, 1)",
+        "fill": false
+      },
+      {
+        "label": "Predicted Demand",
+        "data": [null, null, null, null, null, null, null, 1450, 1400, 900, 1200, 1300],
+        "borderColor": "rgba(78, 105, 186, 1)",
+        "fill": false,
+        "borderDash": [5]
+      }
+    ]
+  },
+  {
+    "produk": "Ayam Goreng Nashvilled",
+    "labels": [
+      "JAN", "FEB", "MAR", "APR", "MEI", 
+      "JUN", "JUL", "AGU", "SEP", "OKT", 
+      "NOV", "DES"
+    ],
+    "datasets": [
+      {
+        "label": "Actual Demand",
+        "data": [100, 850, 900, 950, 1200, 1050, 1100, 1250, null, null, null, null],
+        "borderColor": "rgba(34, 55, 119, 1)",
+        "fill": false
+      },
+      {
+        "label": "Predicted Demand",
+        "data": [null, null, null, null, null, null, null, 1250, 1400, 1500, 1300, 1350],
+        "borderColor": "rgba(78, 105, 186, 1)",
+        "fill": false,
+        "borderDash": [5]
+      }
+    ]
+  },
+  {
+    "produk": "Ayam Rebus Nashvilled",
+    "labels": [
+      "JAN", "FEB", "MAR", "APR", "MEI", 
+      "JUN", "JUL", "AGU", "SEP", "OKT", 
+      "NOV", "DES"
+    ],
+    "datasets": [
+      {
+        "label": "Actual Demand",
+        "data": [900, 950, 1000, 1050, 1100, 1150, 1200, 1250, null, null, null, null],
+        "borderColor": "rgba(34, 55, 119, 1)",
+        "fill": false
+      },
+      {
+        "label": "Predicted Demand",
+        "data": [null, null, null, null, null, null, null, 1250, 1700, 1450, 1400, 1200],
+        "borderColor": "rgba(78, 105, 186, 1)",
+        "fill": false,
+        "borderDash": [5]
+      }
+    ]
+  },
+  {
+    "produk": "Ayam Pepes Nashvilled",
+    "labels": [
+      "JAN", "FEB", "MAR", "APR", "MEI", 
+      "JUN", "JUL", "AGU", "SEP", "OKT", 
+      "NOV", "DES"
+    ],
+    "datasets": [
+      {
+        "label": "Actual Demand",
+        "data": [900, 950, 1500, 1200, 1100, 1250, 1500, 1300, null, null, null, null],
+        "borderColor": "rgba(34, 55, 119, 1)",
+        "fill": false
+      },
+      {
+        "label": "Predicted Demand",
+        "data": [null, null, null, null, null, null, null, 1300, 1350, 1500, 1400, 1450],
+        "borderColor": "rgba(78, 105, 186, 1)",
+        "fill": false,
+        "borderDash": [5]
+      }
+    ]
+  }
+]

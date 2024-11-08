@@ -1,0 +1,86 @@
+[
+  {
+    "produk": "Ayam Bakar Nashvilled",
+    "labels": [
+      "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"
+    ],
+    "datasets": [
+      {
+        "label": "Actual Demand",
+        "data": [1150, 1260, 1460, 1490, 1490, 1480, 1480, 1130, 1140, 1310, 1080, 1210, 1310, 1480, 1450, 1480, 1470, 1340, 1030, 1180, null, null, null, null, null, null, null, null, null, null],
+        "borderColor": "rgba(34, 55, 119, 1)",
+        "fill": false
+      },
+      {
+        "label": "Predicted Demand",
+        "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1180, 1020, 1490, 1130, 1350, 1280, 1070, 1420, 1310, 1160, 1240],
+        "borderColor": "rgba(78, 105, 186, 1)",
+        "fill": false,
+        "borderDash": [5]
+      }
+    ]
+  },
+  {
+    "produk": "Ayam Goreng Nashvilled",
+    "labels": [
+      "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"
+    ],
+    "datasets": [
+      {
+        "label": "Actual Demand",
+        "data": [1190, 1110, 1140, 1160, 1000, 1490, 1290, 1380, 1280, 1140, 1190, 1050, 1440, 1210, 1240, 1320, 1460, 1220, 1400, 1100, null, null, null, null, null, null, null, null, null, null],
+        "borderColor": "rgba(34, 55, 119, 1)",
+        "fill": false
+      },
+      {
+        "label": "Predicted Demand",
+        "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1100, 1110, 1460, 1030, 1250, 1390, 1220, 1090, 1400, 1330, 1180],
+        "borderColor": "rgba(78, 105, 186, 1)",
+        "fill": false,
+        "borderDash": [5]
+      }
+    ]
+  },
+  {
+    "produk": "Ayam Rebus Nashvilled",
+    "labels": [
+      "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"
+    ],
+    "datasets": [
+      {
+        "label": "Actual Demand",
+        "data": [1070, 1170, 1270, 1020, 1130, 1410, 1350, 1290, 1160, 1500, 1470, 1410, 1370, 1130, 1230, 1250, 1370, 1320, 1310, 1020, null, null, null, null, null, null, null, null, null, null],
+        "borderColor": "rgba(34, 55, 119, 1)",
+        "fill": false
+      },
+      {
+        "label": "Predicted Demand",
+        "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1020, 1110, 1460, 1030, 1250, 1390, 1220, 1090, 1400, 1330, 1180],
+        "borderColor": "rgba(78, 105, 186, 1)",
+        "fill": false,
+        "borderDash": [5]
+      }
+    ]
+  },
+  {
+    "produk": "Ayam Pepes Nashvilled",
+    "labels": [
+      "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30"
+    ],
+    "datasets": [
+      {
+        "label": "Actual Demand",
+        "data": [1010, 1240, 1370, 1420, 1150, 1090, 1320, 1480, 1270, 1190, 1450, 1030, 1390, 1220, 1130, 1400, 1290, 1060, 1350, 1180, null, null, null, null, null, null, null, null, null, null],
+        "borderColor": "rgba(34, 55, 119, 1)",
+        "fill": false
+      },
+      {
+        "label": "Predicted Demand",
+        "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1180, 1110, 1460, 1030, 1250, 1390, 1220, 1090, 1400, 1330, 1180],
+        "borderColor": "rgba(78, 105, 186, 1)",
+        "fill": false,
+        "borderDash": [5]
+      }
+    ]
+  }
+]
