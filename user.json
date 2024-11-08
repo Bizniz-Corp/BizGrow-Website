@@ -1,0 +1,157 @@
+[
+  {
+    "nama": "Crispbar",
+    "email": "crisbar@example.com",
+    "password": "hashed_password1",
+    "npwp": "123456789012345",
+    "penjualan": [
+      {
+        "tanggal": "2024-10-29",
+        "id": "PJ001",
+        "produk": "Produk A",
+        "kuantitas": 10,
+        "harga": 50000,
+        "total": 500000
+      },
+      {
+        "tanggal": "2024-10-30",
+        "id": "PJ002",
+        "produk": "Produk B",
+        "kuantitas": 5,
+        "harga": 75000,
+        "total": 375000
+      }
+    ],
+    "stok": [
+      {
+        "tanggal": "2024-10-28",
+        "id": "ST001",
+        "produk": "Produk A",
+        "perubahan": 10,
+        "total": 100
+      },
+      {
+        "tanggal": "2024-10-29",
+        "id": "ST002",
+        "produk": "Produk B",
+        "perubahan": -5,
+        "total": 50
+      }
+    ]
+  },
+  {
+    "nama": "Sang Pisang",
+    "email": "kaesang@example.com",
+    "password": "hashed_password2",
+    "npwp": "678901234567890",
+    "penjualan": [
+      {
+        "tanggal": "2024-10-28",
+        "id": "PJ003",
+        "produk": "Produk C",
+        "kuantitas": 8,
+        "harga": 60000,
+        "total": 480000
+      }
+    ],
+    "stok": [
+      {
+        "tanggal": "2024-10-27",
+        "id": "ST003",
+        "produk": "Produk C",
+        "perubahan": 15,
+        "total": 80
+      }
+    ]
+  },
+  {
+    "nama": "Indomaret",
+    "email": "indomaret@example.com",
+    "password": "hashed_password3",
+    "npwp": "234567890123456",
+    "penjualan": [
+      {
+        "tanggal": "2024-10-30",
+        "id": "PJ004",
+        "produk": "Produk D",
+        "kuantitas": 3,
+        "harga": 150000,
+        "total": 450000
+      }
+    ],
+    "stok": [
+      {
+        "tanggal": "2024-10-29",
+        "id": "ST004",
+        "produk": "Produk D",
+        "perubahan": 5,
+        "total": 30
+      }
+    ]
+  },
+  {
+    "nama": "Alfamart",
+    "email": "alfamart@example.com",
+    "password": "hashed_password4",
+    "npwp": "345678901234567",
+    "penjualan": [
+      {
+        "tanggal": "2024-10-31",
+        "id": "PJ005",
+        "produk": "Produk E",
+        "kuantitas": 2,
+        "harga": 250000,
+        "total": 500000
+      },
+      {
+        "tanggal": "2024-11-01",
+        "id": "PJ006",
+        "produk": "Produk F",
+        "kuantitas": 1,
+        "harga": 300000,
+        "total": 300000
+      }
+    ],
+    "stok": [
+      {
+        "tanggal": "2024-10-30",
+        "id": "ST005",
+        "produk": "Produk E",
+        "perubahan": -2,
+        "total": 10
+      },
+      {
+        "tanggal": "2024-10-31",
+        "id": "ST006",
+        "produk": "Produk F",
+        "perubahan": 5,
+        "total": 15
+      }
+    ]
+  },
+  {
+    "nama": "Fufufafa",
+    "email": "fufufafa@example.com",
+    "password": "hashed_password5",
+    "npwp": "456789012345678",
+    "penjualan": [
+      {
+        "tanggal": "2024-10-29",
+        "id": "PJ007",
+        "produk": "Produk G",
+        "kuantitas": 7,
+        "harga": 70000,
+        "total": 490000
+      }
+    ],
+    "stok": [
+      {
+        "tanggal": "2024-10-28",
+        "id": "ST007",
+        "produk": "Produk G",
+        "perubahan": 10,
+        "total": 70
+      }
+    ]
+  }
+]
