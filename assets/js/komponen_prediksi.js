@@ -50,7 +50,7 @@ function updateChart(productName, data) {
     }
 }
 
-fetch('https://raw.githubusercontent.com/Bizniz-Corp/BizGrow-Website/refs/heads/1302223041_Syahreza/assets/data/prediksi_demand_tahun.json')
+fetch('https://raw.githubusercontent.com/Bizniz-Corp/BizGrow-Website/refs/heads/1302223041_Syahreza/assets/data/prediksi_demand_bulan.json')
     .then(response => response.json())
     .then(jsonData => {
         const selectElement = document.getElementById('productSelect');
