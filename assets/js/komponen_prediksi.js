@@ -1,7 +1,7 @@
 const configLineChart = {
     type: 'line',
     data: {
-        labels: [],  // akan diisi dari JSON
+        labels: [], 
         datasets: []
     },
     options: {
@@ -158,4 +158,61 @@ const percentageData = {
     const percentageChart = new Chart(
         document.getElementById('percentageChart'),
         configDoughnut
+);
+    
+// buffer stock
+
+const data = {
+        labels: ['Ayam', 'Tepung', 'Garam'],
+        datasets: [
+            {
+                label: 'Stok Asli',
+                data: [20, 25, 30],
+                backgroundColor: 'rgba(54, 162, 235, 0.8)'  // Warna untuk Stok Asli
+            },
+            {
+                label: 'Buffer Stock',
+                data: [30, 70, 40],
+                backgroundColor: 'rgba(255, 99, 132, 0.5)'  // Warna untuk Buffer Stock
+            }
+        ]
+    };
+
+    const config = {
+        type: 'bar',
+        data: data,
+        options: {
+            responsive: true,
+            plugins: {
+                legend: {
+                    position: 'top'
+                },
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return `${context.dataset.label}: ${context.raw}`;
+                        }
+                    }
+                }
+            },
+            scales: {
+                x: {
+                    stacked: true  // Bar pada sumbu x akan bertumpuk
+                },
+                y: {
+                    beginAtZero: true,
+                    stacked: true,  // Bar pada sumbu y akan bertumpuk
+                    title: {
+                        display: true,
+                        text: 'Jumlah Stok'
+                    }
+                }
+            }
+        }
+    };
+
+    // Render chart
+    const bufferStockChart = new Chart(
+        document.getElementById('bufferStockChart'),
+        config
     );
