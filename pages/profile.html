@@ -11,6 +11,7 @@
       crossorigin="anonymous"
     />
     <link href="../assets/css/style.css" rel="stylesheet" />
+    <link href="../assets/css/profile.css" rel="stylesheet" />
   </head>
 
   <body>
@@ -22,7 +23,7 @@
             <img src="../img/Boom Es.jpeg" alt="profile_pict" />
           </button>
           <div class="sidebar-nama text-center">
-            <a href="#">Nama UMKM</a>
+            <a href="profile.html">Nama UMKM</a>
           </div>
         </div>
         <ul class="sidebar-nav">
@@ -50,7 +51,7 @@
               data-bs-parent="#penjualan"
             >
               <li class="sidebar-item">
-                <a href="#" class="sidebar-link">Input Data</a>
+                <a href="penjualan_input.html" class="sidebar-link">Input Data</a>
               </li>
               <li class="sidebar-item">
                 <a href="penjualan_history.html" class="sidebar-link"
@@ -83,7 +84,7 @@
               data-bs-parent="#stok"
             >
               <li class="sidebar-item">
-                <a href="#" class="sidebar-link">Input Data</a>
+                <a href="stok_input" class="sidebar-link">Input Data</a>
               </li>
               <li class="sidebar-item">
                 <a href="stok_history.html" class="sidebar-link">Riwayat</a>
@@ -123,9 +124,7 @@
             alt="User Avatar"
           />
           <div class="ms-5">
-            <label for="umkmNameInput" class="form-label fw-bold"
-              >Nama UMKM</label
-            >
+            <label for="umkmNameInput" class="form-label fw-bold">Nama UMKM</label>
             <input
               type="text"
               class="form-control text-muted mb-2"
@@ -135,16 +134,25 @@
 
             <label for="umkmEmailInput" class="form-label fw-bold">Email</label>
             <input
-              type="text"
+              type="email"
               class="form-control text-muted mb-2"
               id="umkmEmailInput"
               disabled
             />
+
+            <label for="umkmNPWP" class="form-label fw-bold">NPWP</label>
+            <input
+              type="text"
+              class="form-control text-muted mb-2"
+              id="umkmNPWP"
+              disabled
+            />
+
             <div class="m-5 d-flex gap-3">
               <a href="profile_edit.html" class="btn btn-primary"
                 >Edit Profil</a
               >
-              <button type="button" class="btn btn-danger">Hapus Akun</button>
+              <button type="button" class="btn btn-danger" id="deleteAccountButton">Hapus Akun</button>
             </div>
           </div>
         </div>
