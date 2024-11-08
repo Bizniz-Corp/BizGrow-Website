@@ -11,6 +11,10 @@ fetch('../user.json')
     emailInput.value = user.email;
     emailInput.setAttribute('data-original', user.email);
 
+    const npwp = document.getElementById('umkmNPWP');
+    npwp.value = user.npwp;
+    npwp.setAttribute('data-original', user.npwp);
+
     nameInput.addEventListener('focus', handleFocus);
     nameInput.addEventListener('blur', handleBlur);
 
@@ -33,14 +37,45 @@ function handleBlur(event) {
   }
 }
 
-document.getElementById("fileInput").addEventListener("change", function(event) {
-  const file = event.target.files[0];
-  if (file) {
-    const reader = new FileReader();
-    reader.onload = function(e) {
-      // Tampilkan gambar yang dipilih
-      document.getElementById("profileImage").src = e.target.result;
-    };
-    reader.readAsDataURL(file);
-  }
+//document.getElementById("fileInput").addEventListener("change", function(event) {
+//  const file = event.target.files[0];
+//  if (file) {
+//    const reader = new FileReader();
+//    reader.onload = function(e) {
+//      document.getElementById("profileImage").src = e.target.result;
+//    };
+//    reader.readAsDataURL(file);
+//  }
+//});
+
+document.addEventListener("DOMContentLoaded", function() {
+  const deleteAccountButton = document.querySelector(".btn-danger");
+  const simpan = document.querySelector(".btn-success");
+
+  simpan.addEventListener("click", function() {
+    const confirmation = confirm("Yakin ingin menyimpan perubahan?");
+    if (!confirmation) {
+      return;
+    }
+    alert("Data berhasil disimpan");
+    window.location.href = "profile.html";
+  });
+
+  deleteAccountButton.addEventListener("click", function() {
+
+    const confirmation = confirm("Yakin ingin menghapus akun?");
+    // sementara, belum ke backend
+    if (confirmation) {
+      window.location.href = "indexsignin.html";
+    }
+    //window.location.href = "indexsignin.html";
+  });
 });
+
+
+document.addEventListener('DOMContentLoaded', function () {
+    const tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'));
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+      new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+  });
