@@ -10,6 +10,10 @@
     --lightBlue: #4E69BA;
 }
 
+html{
+    background-color: var(--white);
+}
+
 /* Sidebar */
 ::after,
 ::before {
@@ -33,7 +37,7 @@ h1 {
 
 body {
     font-family: 'Montserrat', sans-serif;
-
+    background-color: var(--white);
 }
 
 .wrapper {

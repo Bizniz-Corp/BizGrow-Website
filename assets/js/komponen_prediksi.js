@@ -1,4 +1,4 @@
-const config = {
+const configLineChart = {
     type: 'line',
     data: {
         labels: [],  // akan diisi dari JSON
@@ -37,14 +37,14 @@ const config = {
     }
 };
 
-const myChart = new Chart(document.getElementById('myChart'), config);
+const lineChartPrediksi = new Chart(document.getElementById('lineChartPrediksi'), configLineChart);
 
 function updateChart(productName, data) {
     const productData = data.find(item => item.produk === productName);
     if (productData) {
-        myChart.data.labels = productData.labels;
-        myChart.data.datasets = productData.datasets;
-        myChart.update();
+        lineChartPrediksi.data.labels = productData.labels;
+        lineChartPrediksi.data.datasets = productData.datasets;
+        lineChartPrediksi.update();
     }
 }
 
@@ -99,3 +99,63 @@ $(document).ready(function () {
     $('.search_select_box select').selectpicker();
 })
 
+
+
+// Pie chart
+
+const percentageData = {
+        datasets: [{
+            label: 'Percentage',
+            data: [80, 20],
+            backgroundColor: [
+                'rgb(54, 162, 235)',
+                'rgba(211, 211, 211, 0.3)'
+            ],
+            hoverOffset: 4
+        }]
+    };
+
+    // Tambahkan konfigurasi untuk teks tengah
+    const configDoughnut = {
+        type: 'doughnut',
+        data: percentageData,
+        options: {
+            plugins: {
+                tooltip: {
+                    callbacks: {
+                        label: function(context) {
+                            return context.raw + '%';
+                        }
+                    }
+                }
+            },
+            cutout: '70%', 
+            elements: {
+                center: {
+                    text: '80%',  
+                    color: '#36A2EB',  
+                    fontStyle: 'Arial',
+                }
+            }
+        },
+        plugins: [{
+            beforeDraw: function(chart) {
+                var ctx = chart.ctx;
+                ctx.restore();
+                var fontSize = (chart.height / 114).toFixed(2);
+                ctx.font = fontSize + "em sans-serif";
+                ctx.textBaseline = "middle";
+                var text = "80%";
+                var textX = Math.round((chart.width - ctx.measureText(text).width) / 2);
+                var textY = chart.height / 2;
+                ctx.fillText(text, textX, textY);
+                ctx.save();
+            }
+        }]
+    };
+
+    // Tampilkan chart
+    const percentageChart = new Chart(
+        document.getElementById('percentageChart'),
+        configDoughnut
+    );
