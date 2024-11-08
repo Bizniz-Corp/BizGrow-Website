@@ -15,50 +15,45 @@
   <div class="signup-container">
     <div class="form-container">
       <h2>Sign Up</h2>
-      <form>
-        <div class = "mb-3">
+      <form id="signupForm" onsubmit="return validateForm()">
+        <div class="mb-3">
           <label for="name" class="form-label">Nama</label>
-          <br>
-          <input type="text" class="form-control" placeholder="Isi Nama">
+          <input type="text" id="name" class="form-control" placeholder="Isi Nama" required>
         </div>
         <div class="mb-3">
-          <label for="Email" class="form-label">Email</label>
-          <br>
-          <input type="emmail" class="form-control" placeholder="Isi Email">
+          <label for="email" class="form-label">Email</label>
+          <input type="email" id="email" class="form-control" placeholder="Isi Email" required>
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Password</label>
-          <br>
-          <input type="password" class="form-control" placeholder="Isi Password">
+          <input type="password" id="password" class="form-control" placeholder="Isi Password" required>
         </div>
         <div class="mb-3">
           <label for="npwp" class="form-label">Nomor Pokok Wajib Pajak</label>
-          <br>
-          <input type="text" class="form-control" placeholder="Isi NPWP">
+          <input type="text" id="npwp" class="form-control" placeholder="Isi NPWP">
         </div>
         <div class="mb-3">
-          <label for="Upload" class="form-label">Surat Izin Usaha</label>
+          <label for="upload" class="form-label">Surat Izin Usaha</label>
           <div class="btn-upload">
-            <button class="btn btn-secondary">Upload File</button>
-            <input type="file" class="form-control">
+            <button type="button" onclick="document.getElementById('upload').click()" class="btn btn-secondary">Upload File</button>
+            <input type="file" id="upload" class="form-control" >
           </div>
         </div>
-        <button type="button" onclick="location.href='indexsignin.html'" class="btn btn-primary w-100">Sign Up</button>
+        <button type="submit" class="btn btn-primary w-100">Sign Up</button>
       </form>
     </div>
     <div class="image-container">
       <img src="img/Sign in.png" alt="bizgrowlogo">
       <div class="overlay-logo">
-        <img src="img/logo1.png" alt="Pizgrow Logo"> <!-- Replace with your logo -->
+        <img src="img/logo1.png" alt="BizGrow Logo">
       </div>
     </div>
-  
   </div>
 
+  <!-- Link to External JavaScript File -->
+  <script src="assets/js/SignUp.js"></script>
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-
-
 </body>
 
 </html>
