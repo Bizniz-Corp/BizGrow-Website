@@ -13,7 +13,7 @@
       },
       {
         "label": "Predicted Demand",
-        "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1020, 1490, 1130, 1350, 1280, 1070, 1420, 1310, 1160, 1240],
+        "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1180, 1020, 1490, 1130, 1350, 1280, 1070, 1420, 1310, 1160, 1240],
         "borderColor": "rgba(78, 105, 186, 1)",
         "fill": false,
         "borderDash": [5]
@@ -34,7 +34,7 @@
       },
       {
         "label": "Predicted Demand",
-        "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1110, 1460, 1030, 1250, 1390, 1220, 1090, 1400, 1330, 1180],
+        "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1100, 1110, 1460, 1030, 1250, 1390, 1220, 1090, 1400, 1330, 1180],
         "borderColor": "rgba(78, 105, 186, 1)",
         "fill": false,
         "borderDash": [5]
@@ -55,7 +55,7 @@
       },
       {
         "label": "Predicted Demand",
-        "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1110, 1460, 1030, 1250, 1390, 1220, 1090, 1400, 1330, 1180],
+        "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1020, 1110, 1460, 1030, 1250, 1390, 1220, 1090, 1400, 1330, 1180],
         "borderColor": "rgba(78, 105, 186, 1)",
         "fill": false,
         "borderDash": [5]
@@ -76,7 +76,7 @@
       },
       {
         "label": "Predicted Demand",
-        "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1110, 1460, 1030, 1250, 1390, 1220, 1090, 1400, 1330, 1180],
+        "data": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, 1180, 1110, 1460, 1030, 1250, 1390, 1220, 1090, 1400, 1330, 1180],
         "borderColor": "rgba(78, 105, 186, 1)",
         "fill": false,
         "borderDash": [5]
