@@ -3,17 +3,26 @@
 .filter-container {
     display: flex;
     align-items: center;
-    /* Menjaga agar item tetap sejajar */
 }
 
-#selectedDates {
-    font-weight: bold;
-    /* Mengubah font menjadi tebal */
+.form-control {
+    border: 1px solid var(--secondary);
+    width: auto;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 6px var(--lightBlue);
 }
 
 /* Table */
+
+.table {
+   border-color: var(--primary);
+}
+
 .table-container {
-    height: 30rem;
+    height: 40rem;
+    border: 1px solid var(--primary);
 }
 
 .table thead tr th {
@@ -24,6 +33,7 @@
 .table tbody tr td {
     background-color: var(--white);
     color: var(--primary);
+    height: 60px;
 }
 
 button.btn img {
