@@ -70,14 +70,14 @@ selectElement.addEventListener('change', function() {
 });
 
 // Event listener untuk dropdown waktu
-document.getElementById('optionBulan').addEventListener('click', function() {
+$('#optionBulan').on('click', function() {
     currentUrl = 'https://raw.githubusercontent.com/Bizniz-Corp/BizGrow-Website/refs/heads/1302223041_Syahreza/assets/data/prediksi_demand_bulan.json';
-    loadData(currentUrl, selectElement.value);
+    loadData(currentUrl, $('#productSelect').val());
 });
 
-document.getElementById('optionHari').addEventListener('click', function() {
+$('#optionHari').on('click', function() {
     currentUrl = 'https://raw.githubusercontent.com/Bizniz-Corp/BizGrow-Website/refs/heads/1302223041_Syahreza/assets/data/prediksi_demand_hari.json';
-    loadData(currentUrl, selectElement.value);
+    loadData(currentUrl, $('#productSelect').val());
 });
 
 const pilihWaktuButton = document.getElementById("pilihWaktuButton");
@@ -115,7 +115,7 @@ const percentageData = {
         }]
     };
 
-    // Tambahkan konfigurasi untuk teks tengah
+    
     const configDoughnut = {
         type: 'doughnut',
         data: percentageData,
@@ -168,12 +168,12 @@ const data = {
             {
                 label: 'Stok Asli',
                 data: [20, 25, 30],
-                backgroundColor: 'rgba(54, 162, 235, 0.8)'  // Warna untuk Stok Asli
+                backgroundColor: 'rgba(54, 162, 235, 0.8)'
             },
             {
                 label: 'Buffer Stock',
                 data: [30, 70, 40],
-                backgroundColor: 'rgba(255, 99, 132, 0.5)'  // Warna untuk Buffer Stock
+                backgroundColor: 'rgba(255, 99, 132, 0.5)'  
             }
         ]
     };
@@ -197,11 +197,11 @@ const data = {
             },
             scales: {
                 x: {
-                    stacked: true  // Bar pada sumbu x akan bertumpuk
+                    stacked: true  
                 },
                 y: {
                     beginAtZero: true,
-                    stacked: true,  // Bar pada sumbu y akan bertumpuk
+                    stacked: true, 
                     title: {
                         display: true,
                         text: 'Jumlah Stok'
