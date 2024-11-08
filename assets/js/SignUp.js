@@ -25,8 +25,8 @@ function validateForm() {
     }
   
     // If form is valid, show success alert and redirect to the home page
-    if (confirm("Sign Up Successful! Click OK to go to the Home page.")) {
-      window.location.href="indexhome.html"; 
+    if (confirm("Sign Up Successful! Click OK to go to the Sign In.")) {
+      window.location.href="indexsignin.html"; 
     }
     return false; // Prevent default form submission
   }
