@@ -48,8 +48,21 @@ function handleBlur(event) {
 //  }
 //});
 
+//document.addEventListener("DOMContentLoaded", function() {
+//  const deleteAccountButton = document.querySelector(".btn-danger");
+//
+//  deleteAccountButton.addEventListener("click", function() {
+//
+//    const confirmation = confirm("Yakin ingin menghapus akun?");
+//    // sementara, belum ke backend
+//    if (confirmation) {
+//      window.location.href = "indexsignin.html";
+//    }
+//    //window.location.href = "indexsignin.html";
+//  });
+//});
+
 document.addEventListener("DOMContentLoaded", function() {
-  const deleteAccountButton = document.querySelector(".btn-danger");
   const simpan = document.querySelector(".btn-success");
 
   simpan.addEventListener("click", function() {
@@ -60,16 +73,6 @@ document.addEventListener("DOMContentLoaded", function() {
     alert("Data berhasil disimpan");
     window.location.href = "profile.html";
   });
-
-  deleteAccountButton.addEventListener("click", function() {
-
-    const confirmation = confirm("Yakin ingin menghapus akun?");
-    // sementara, belum ke backend
-    if (confirmation) {
-      window.location.href = "indexsignin.html";
-    }
-    //window.location.href = "indexsignin.html";
-  });
 });
 
 
@@ -79,3 +82,4 @@ document.addEventListener('DOMContentLoaded', function () {
       new bootstrap.Tooltip(tooltipTriggerEl);
     });
   });
+
