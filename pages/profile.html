@@ -23,7 +23,7 @@
             <img src="../img/Boom Es.jpeg" alt="profile_pict">
           </button>
           <div class="sidebar-nama text-center">
-            <a href="profile.html">Nama UMKM</a>
+            <a href="#">Nama UMKM</a>
           </div>
         </div>
         <ul class="sidebar-nav">
@@ -47,7 +47,7 @@
                 <a href="../pages/penjualan_history.html" class="sidebar-link">Riwayat Penjualan</a>
               </li>
               <li class="sidebar-item">
-                <a href="#" class="sidebar-link">Prediksi Permintaan</a>
+                <a href="penjualan/penjualan_prediksi_demand.html" class="sidebar-link">Prediksi Permintaan</a>
               </li>
               <li class="sidebar-item">
                 <a href="#" class="sidebar-link">Prediksi Profit</a>
@@ -127,11 +127,32 @@
             />
 
             <div class="m-5 d-flex gap-3">
-              <a href="profile_edit.html" class="btn btn-primary"
-                >Edit Profil</a
-              >
-              <button type="button" class="btn btn-danger" id="deleteAccountButton">Hapus Akun</button>
+              <a href="profile_edit.html" class="btn btn-primary">Edit Profil</a>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#deleteAccountModal">Hapus Akun</button>
             </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="deleteAccountModal" tabindex="-1" aria-labelledby="deleteAccountModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="deleteAccountModalLabel" style="text-align: center; font-weight: bold;">Are your sure you want to delete your account?</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <p style="color: red; text-align: center;">All your personal information and assets will be permanently deleted, and existing sessions canceled</p>
+            <form id="deleteAccountForm">
+              <div class="mb-3">
+                <input type="password" class="form-control" id="passwordInput" placeholder="Password" required>
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cancel</button>
+            <button type="submit" form="deleteAccountForm" class="btn btn-danger" onclick="window.location.href='indexsignin.html'">Hapus Akun</button>
           </div>
         </div>
       </div>
